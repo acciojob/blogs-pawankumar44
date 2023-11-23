@@ -25,8 +25,9 @@ public class UserService {
 
     //TODO: update process
     public User updateUser(Integer id, String password){
-        User user = userRepository3.findById(id).orElse(null);
-        if(user!=null) user.setPassword(password);
+        User user = userRepository3.findById(id).get();
+        user.setPassword(password);
+        userRepository3.save(user);
         return user;
     }
 }
