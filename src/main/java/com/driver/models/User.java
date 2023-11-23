@@ -1,7 +1,5 @@
 package com.driver.models;
 
-import com.driver.models.Blog;
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -46,7 +44,7 @@ public class User {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public void setUsername(String userName) {
         this.userName = userName;
     }
 
