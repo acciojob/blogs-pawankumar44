@@ -28,6 +28,7 @@ public class BlogService {
         b.setContent(content);
         b.setPubDate(new Date());
         User user = userRepository1.findById(userId).orElse(null);
+        if(user == null) return null;
         b.setUser(user);
         return blogRepository1.save(b);
     }
