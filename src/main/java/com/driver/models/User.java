@@ -19,6 +19,14 @@ public class User {
             //we have mapped by user, to store user id in each blog rather than creating separate table of user_id and blog_id
     List<Blog> blogs;
 
+    public List<Blog> getBlogList() {
+        return blogs;
+    }
+
+    public void setBlogList(List<Blog> blogs) {
+        this.blogs = blogs;
+    }
+
     public User() {
     }
 
@@ -40,7 +48,7 @@ public class User {
         this.id = id;
     }
 
-    public String getUserName() {
+    public String getUsername() {
         return userName;
     }
 

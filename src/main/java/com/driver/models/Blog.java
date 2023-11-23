@@ -1,6 +1,5 @@
 package com.driver.models;
 
-import com.driver.models.User;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
@@ -31,11 +30,11 @@ public class Blog {
         this.user = user;
     }
 
-    public List<Image> getImages() {
+    public List<Image> getImageList() {
         return images;
     }
 
-    public void setImages(List<Image> images) {
+    public void setImageList(List<Image> images) {
         this.images = images;
     }
 

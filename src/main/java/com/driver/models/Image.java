@@ -50,7 +50,7 @@ public class Image {
         return dimension;
     }
 
-    public void setDimension(String dimension) {
+    public void setDimensions(String dimension) {
         this.dimension = dimension;
     }
 }
