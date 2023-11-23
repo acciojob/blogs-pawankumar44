@@ -46,7 +46,7 @@ public class Image {
         this.description = description;
     }
 
-    public String getDimension() {
+    public String getDimensions() {
         return dimension;
     }
 
