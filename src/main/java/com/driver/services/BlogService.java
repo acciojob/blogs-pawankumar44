@@ -30,7 +30,7 @@ public class BlogService {
         User user = userRepository1.findById(userId).orElse(null);
         if(user == null) return null;
         b.setUser(user);
-        return blogRepository1.save(b);
+        return b = blogRepository1.save(b);
     }
 
     public void deleteBlog(int blogId){
