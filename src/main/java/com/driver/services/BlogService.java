@@ -44,7 +44,9 @@ public class BlogService {
         //delete blog and corresponding images
         Blog blog = blogRepository1.findById(blogId).get();
         List<Image> images = blog.getImageList();
-        imageRepository.deleteAll(images);
+        for(Image image : images){
+            imageRepository.deleteById(image.getId());
+        }
         blogRepository1.deleteById(blogId);
     }
 }
